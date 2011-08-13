@@ -4,5 +4,9 @@
     "bin": "./bin/jspm",
     "main": "./index.js",
     "description": "browser side javascript package manager",
-    "author" : "mizchi <miz404@gmail.com>"
+    "author" : "mizchi <miz404@gmail.com>",
+    "dependencies":[
+        "coffee-script":">1.0.0",
+        "express":">2.0.0"
+    ]
 }
