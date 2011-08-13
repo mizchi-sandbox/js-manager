@@ -1,8 +1,8 @@
-#!/usr/bin/env node
+#!/usr/bin/env coffee
 require('coffee-script');
 doc = require('./doc').doc
-fs = require 'fs'
-path = require 'path'
+fs = require('fs')
+path = require('path')
 request = require('request')
 
 HOME = process.env['HOME']
@@ -10,8 +10,8 @@ JSPM_PATH = path.join( HOME , '.javascript_modules')
 
 resource_fname = 'resources'
 resources = require('./'+ resource_fname).resources
-if path.existsSync( path.join(JSPM_PATH,resource_fname )
-  user_resources = require(path.join(JSPM_PATH,resource_fname )).resources
+if path.existsSync( path.join(JSPM_PATH,resource_fname))
+  user_resources = require(path.join(JSPM_PATH,resource_fname)).resources
   for k,v of user_resources
     resources[k] = v
 
