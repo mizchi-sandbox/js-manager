@@ -1,0 +1,8 @@
+{
+    "name": "js-manager",
+    "version": "0.0.1",
+    "bin": "./bin/jspm",
+    "main": "./index.js",
+    "description": "browser side javascript package manager",
+    "author" : "mizchi <miz404@gmail.com>"
+}

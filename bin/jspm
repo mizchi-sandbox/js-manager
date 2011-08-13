@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+var cmd_type, jspm_commands;
+require('coffee-script');
+jspm_commands = require('../commands').jspm_commands;
+cmd_type = (process.argv.length > 2 ? process.argv[2] : "help");
+if (!jspm_commands[cmd_type]) {
+  console.log("[" + cmd_type + "] no such a command.");
+  process.exit(0);
+}
+jspm_commands[cmd_type](process.argv[3]);
